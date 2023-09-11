@@ -1,0 +1,13 @@
+<main>
+	<div class="card d-flex flex-row justify-content-center align-items-center m-2">
+        <img src="{{product.url_photo}}" class="card-img-top p-3" style="width: 40vh" alt="{{product.title}}">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title text-center mb-2">{{product.title}}</h5>
+            <p class="card-text text-center mb-2">U$D{{product.price}}</p>
+            <p class="card-text text-center mb-2">{{product.stock}} units in stock</p>
+            <p class="card-text text-center mb-2">{{product.description}}</p>
+            <input type="number" class="text-center" style="width: 150px" value="0" min="0" max={{product.stock}} name="quantity" id={{product.pid}}>
+            <input id="add-to-cart" type="button" style="width: 150px" class="btn btn-primary mt-2" value="add to cart!">
+        </div>
+	</div>
+</main>

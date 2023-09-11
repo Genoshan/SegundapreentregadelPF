@@ -1,0 +1,22 @@
+<main>
+	<div class="container m-2">
+		<div class="row">
+			<div class="col-12 d-flex flex-column justify-content-center">
+                {{#each products}}
+                    <div class="card m-2 d-flex flex-row justify-content-center align-items-center">
+                        <img src="{{this.url_photo}}" class="card-img-top p-3 m-0" style="width: 100px" alt="{{this.title}}">
+                        <p class="card-text text-center p-2 m-0" style="width: 100px">{{this.title}}</p>
+                        <input id="q{{this.pid}}" type="button" style="width: 25px" class="quit-units btn btn-danger p-1 m-1" value="-">
+                        <input type="text" disabled id="qu{{this.pid}}" class="card-text text-center p-2 m-0" style="width: 50px" value={{this.quantity}}>
+                        <input id="a{{this.pid}}" type="button" style="width: 25px" class="add-units btn btn-success p-1 m-1" value="+">
+                        <p id="p{{this.pid}}" class="card-text text-center p-2 m-0" style="width: 100px">{{this.price}}</p>
+                        <p id="t{{this.pid}}" class="card-text text-center p-2 m-0" style="width: 100px">= U$D{{this.total}}</p>
+                    </div>
+                {{/each}}
+                <div class="card m-2 d-flex flex-row justify-content-center align-items-center">
+                    <p class="card-text text-end p-2 m-0" style="width: 500px">TOTAL: U$D{{this.total}}</p>
+                </div>
+            </div>
+		</div>
+	</div>
+</main>

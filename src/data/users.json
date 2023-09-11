@@ -1,0 +1,43 @@
+[
+  {
+    "name": "igna",
+    "last_name": "borraz",
+    "age": "32",
+    "url_photo": "C:\\repos\\coder\\node-39770\\workshops\\ws_08\\public\\img\\dekt.png",
+    "id": 1
+  },
+  {
+    "name": "igna",
+    "last_name": "borraz",
+    "url_photo": "C:\\repos\\coder\\node-39770\\workshops\\ws_08\\public\\img\\dekt.png",
+    "id": 2
+  },
+  {
+    "name": "igna",
+    "last_name": "borraz",
+    "age": "32",
+    "url_photo": "public\\img\\fondoo.png",
+    "id": 3
+  },
+  {
+    "name": "igna",
+    "last_name": "borraz",
+    "age": "32",
+    "url_photo": "public\\img\\fondoo.png",
+    "id": 4
+  },
+  {
+    "name": "igna",
+    "last_name": "borraz",
+    "age": "32",
+    "url_photo": "C:\\repos\\server-NODEJS\\public\\img\\fondoo.png",
+    "id": 5
+  },
+  {
+    "name": "igna",
+    "last_name": "a",
+    "age": "1",
+    "url_photo": "C:\\repos\\server-NODEJS\\public\\img\\fondoo.png",
+    "id": 6
+  }
+]
