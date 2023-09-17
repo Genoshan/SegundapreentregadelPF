@@ -33,4 +33,17 @@ sessions_router.post('/signout',async(req,res,next)=> {
     }
 })
 
+sessions_router.post('/current',async(req,res,next)=> {
+    try {
+        const { user } = req.body
+        req.session.user = user
+        return res.status(200).json({
+            success: true,
+            message: user+' es el usuario actual'
+        })
+    } catch (error) {
+        next(error)
+    }
+})
+
 export default sessions_router

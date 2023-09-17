@@ -41,8 +41,7 @@ export default function () {
           if (!data) {
             return done(null);
           } else {
-            return done(null, data); //le ponga el nombre que le ponga SIEMPRE inyecta al objeto de requerimientos una propiedad user
-            //de forma que en req.user tengo los datos del usuario encontrado
+            return done(null, data);
           }
         } catch (error) {
           return done(error);
